@@ -3,7 +3,7 @@ package com.roman.service;
 import com.roman.dao.entity.Comment;
 import com.roman.dao.entity.Customer;
 import com.roman.dao.entity.News;
-import com.roman.dao.repository.CommentRepository;
+import com.roman.dao.repository.comment.CommentRepository;
 import com.roman.dao.repository.customer.CustomerRepository;
 import com.roman.dao.repository.news.NewsRepository;
 import com.roman.service.dto.comment.CreateCommentDto;

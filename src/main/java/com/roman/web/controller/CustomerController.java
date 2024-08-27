@@ -1,6 +1,6 @@
 package com.roman.web.controller;
 
-import com.roman.annotation.CheckSession;
+import com.roman.aop.annotation.CheckSession;
 import com.roman.service.CustomerService;
 import com.roman.service.dto.customer.CreateAndLoginCustomerDto;
 import com.roman.service.dto.customer.ShowCustomerDto;

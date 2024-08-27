@@ -2,5 +2,8 @@ spring:
   datasource:
       password: test
       username: test
+  data:
+    redis:
+      news-live-time: 2
 #  liquibase:
 #    change-log: classpath:db/changelog/db.changelog-master-test.yaml

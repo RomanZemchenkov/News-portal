@@ -1,5 +1,6 @@
 package com.roman.dao.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -29,15 +30,18 @@ public class Customer implements BaseEntity<Long>{
     @Column(name = "password")
     private String password;
 
+    @JsonManagedReference(value = "customer-categories")
     @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Category> categories = new ArrayList<>();
 
     @OneToOne(mappedBy = "customer", cascade = {CascadeType.REMOVE,CascadeType.PERSIST}, fetch = FetchType.LAZY)
     private CustomerInfo customerInfo;
 
+    @JsonManagedReference(value = "customer-comments")
     @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Set<Comment> comments = new HashSet<>();
 
+    @JsonManagedReference(value = "customer-news")
     @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Set<News> news = new HashSet<>();
 

@@ -19,4 +19,7 @@ public class ClassPointcut {
 
     @Pointcut(value = "within(com.roman.web.controller.CommentController)")
     public void isCommentController(){}
+
+    @Pointcut(value = "within(com.roman.service.CategoryService)")
+    public void isCategoryService(){}
 }

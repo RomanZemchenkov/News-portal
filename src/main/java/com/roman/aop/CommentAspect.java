@@ -1,10 +1,9 @@
 package com.roman.aop;
 
 import com.roman.dao.entity.Comment;
-import com.roman.dao.repository.CommentRepository;
+import com.roman.dao.repository.comment.CommentRepository;
 import com.roman.service.dto.comment.UpdateCommentDto;
 import com.roman.service.validation.exception.CommentException;
-import com.roman.service.validation.exception.NewsException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;

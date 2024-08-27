@@ -1,7 +1,7 @@
 package com.roman.web.controller;
 
-import com.roman.annotation.CheckAuthor;
-import com.roman.annotation.CheckSession;
+import com.roman.aop.annotation.CheckAuthor;
+import com.roman.aop.annotation.CheckSession;
 import com.roman.service.CategoryService;
 import com.roman.service.dto.category.CreateCategoryDto;
 import com.roman.service.dto.category.ShowCategoryDto;

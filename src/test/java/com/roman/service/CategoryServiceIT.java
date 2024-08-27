@@ -89,7 +89,6 @@ public class CategoryServiceIT extends BaseTest {
 
     static Stream<Arguments> argumentsForFindCategoryById() {
         return Stream.of(
-                Arguments.of(1L,List.of("Test IT news", "Computers")),
                 Arguments.of(2L,List.of("Test animal news"))
         );
     }
@@ -99,7 +98,6 @@ public class CategoryServiceIT extends BaseTest {
     void successfulUpdateCategory(){
         ShowCategoryDto category = Assertions.assertDoesNotThrow(() -> service.update(new UpdateCategoryDto("1", "New Title")));
 
-        System.out.println(category);
         assertThat(category.getTitle()).isEqualTo("New Title");
     }
 

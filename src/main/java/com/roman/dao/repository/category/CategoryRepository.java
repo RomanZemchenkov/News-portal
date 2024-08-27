@@ -13,7 +13,4 @@ import java.util.Optional;
 public interface CategoryRepository extends JpaRepository<Category,Long>,CustomCategoryRepository {
 
     Page<Category> findAllBy(Pageable pageable);
-
-    @EntityGraph(type = EntityGraph.EntityGraphType.LOAD,attributePaths = {"news"})
-    Optional<Category> findCategoryById(Long id);
 }

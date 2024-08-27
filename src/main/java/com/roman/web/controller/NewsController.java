@@ -1,7 +1,7 @@
 package com.roman.web.controller;
 
-import com.roman.annotation.CheckAuthor;
-import com.roman.annotation.CheckSession;
+import com.roman.aop.annotation.CheckAuthor;
+import com.roman.aop.annotation.CheckSession;
 import com.roman.service.NewsService;
 import com.roman.service.dto.news.*;
 import jakarta.servlet.http.HttpSession;

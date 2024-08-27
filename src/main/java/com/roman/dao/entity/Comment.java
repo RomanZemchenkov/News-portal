@@ -1,5 +1,6 @@
 package com.roman.dao.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -21,10 +22,12 @@ public class Comment implements BaseEntity<Long>{
     @Column(name = "text")
     private String text;
 
+    @JsonBackReference(value = "news-comments")
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "news_id")
     private News news;
 
+    @JsonBackReference(value = "customer-comments")
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id")
     private Customer customer;

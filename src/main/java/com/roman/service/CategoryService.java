@@ -1,5 +1,6 @@
 package com.roman.service;
 
+import com.roman.aop.annotation.CheckExist;
 import com.roman.dao.entity.Category;
 import com.roman.dao.entity.Customer;
 import com.roman.dao.repository.category.CategoryRepository;
@@ -60,25 +61,17 @@ public class CategoryService {
         return categories.stream().map(mapper::mapToShowWithoutNews).toList();
     }
 
+    @CheckExist
     public ShowCategoryDto findCategoryById(Long id){
-        Optional<Category> mayBeCategory = repository.findCategoryById(id);
-        if(mayBeCategory.isEmpty()){
-            throw new CategoryException(CATEGORY_DOESNT_EXIST.formatted(id));
-        }
-
-        Category category = mayBeCategory.get();
+        Category category = repository.findCategoryById(id);
         return mapper.mapToShow(category);
     }
 
     @Transactional
+    @CheckExist
     public ShowCategoryDto update(UpdateCategoryDto dto){
         Long id = Long.valueOf(dto.getId());
-        Optional<Category> mayBeCategory = repository.findCategoryById(id);
-        if(mayBeCategory.isEmpty()){
-            throw new CategoryException(CATEGORY_DOESNT_EXIST.formatted(id));
-        }
-
-        Category category = mayBeCategory.get();
+        Category category = repository.findCategoryById(id);
 
         String title = dto.getTitle();
         if(!category.getTitle().equals(title)){
@@ -94,12 +87,8 @@ public class CategoryService {
     }
 
     @Transactional
+    @CheckExist
     public Long deleteById(Long id){
-        Optional<Category> mayBeCategory = repository.findCategoryById(id);
-        if(mayBeCategory.isEmpty()){
-            throw new CategoryException(CATEGORY_DOESNT_EXIST.formatted(id));
-        }
-
         repository.deleteById(id);
         return id;
     }

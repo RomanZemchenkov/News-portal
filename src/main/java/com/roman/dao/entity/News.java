@@ -1,5 +1,8 @@
 package com.roman.dao.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -47,12 +50,16 @@ public class News implements BaseEntity<Long> {
     @Column(name = "text")
     private String text;
 
+    @JsonBackReference(value = "category-news")
     @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
 
-    @OneToMany(mappedBy = "news",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonManagedReference(value = "news-comments")
+    @JsonIgnore
+    @OneToMany(mappedBy = "news",fetch = FetchType.LAZY, cascade = {CascadeType.DETACH,CascadeType.REMOVE})
     private List<Comment> comments = new ArrayList<>();
 
+    @JsonBackReference(value = "customer-news")
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name = "customer_id")
     private Customer customer;

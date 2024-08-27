@@ -8,9 +8,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class AnnotationPointcut {
 
-    @Pointcut(value = "@annotation(com.roman.annotation.CheckSession))")
+    @Pointcut(value = "@annotation(com.roman.aop.annotation.CheckSession))")
     public void hasCheckSessionAnnotation(){}
 
-    @Pointcut(value = "@annotation(com.roman.annotation.CheckAuthor)")
+    @Pointcut(value = "@annotation(com.roman.aop.annotation.CheckAuthor)")
     public void hasCheckAuthorAnnotation(){}
+
+    @Pointcut(value = "@annotation(com.roman.aop.annotation.CheckExist)")
+    public void hasCheckExistAnnotation(){}
 }

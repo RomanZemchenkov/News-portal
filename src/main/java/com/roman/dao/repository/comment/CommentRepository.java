@@ -1,4 +1,4 @@
-package com.roman.dao.repository;
+package com.roman.dao.repository.comment;
 
 import com.roman.dao.entity.Comment;
 import org.springframework.data.jpa.repository.EntityGraph;
