@@ -4,7 +4,7 @@
 
     <groupId>com.roman</groupId>
     <artifactId>news-portal</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <parent>
         <groupId>org.springframework.boot</groupId>

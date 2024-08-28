@@ -271,31 +271,21 @@ public class CustomerControllerTest extends BaseTest {
     @Test
     @DisplayName("Тест удачного удаления пользователя")
     void successfulDeleteCustomer() throws Exception {
-        mock.perform(delete("/api/customers/1").session(loginCustomer()))
+        mock.perform(delete("/api/customers").session(loginCustomer()))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message", Matchers.is("Customer with id '1' was deleted.")));
     }
 
-    @ParameterizedTest
+    @Test
     @DisplayName("Тест неудачного удаления пользователя")
-    @MethodSource("argumentsForUnsuccessfulDeleteCustomer")
-    void unsuccessfulDeleteCustomer(String id, boolean hasSession, String expectedErrorMessage) throws Exception {
+    void unsuccessfulDeleteCustomer() throws Exception {
         MockHttpSession session = loginCustomer();
-        if(!hasSession){
-            session.invalidate();
-        }
-        ResultActions actions = mock.perform(delete("/api/customers/%s".formatted(id)).session(session));
+        session.invalidate();
+        ResultActions actions = mock.perform(delete("/api/customers").session(session));
 
         actions.andExpect(status().is4xxClientError())
-                .andExpect(jsonPath("$.message",Matchers.is(expectedErrorMessage)));
+                .andExpect(jsonPath("$.message",Matchers.is(LOGGED_EXCEPTION)));
 
-    }
-
-    static Stream<Arguments> argumentsForUnsuccessfulDeleteCustomer(){
-        return Stream.of(
-                Arguments.of("100",true,CUSTOMER_ID_EXCEPTION.formatted(100)),
-                Arguments.of("1",false,LOGGED_EXCEPTION)
-        );
     }
 
 

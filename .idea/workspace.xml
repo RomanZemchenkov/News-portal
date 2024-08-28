@@ -5,43 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="766d41c4-7e90-4bf7-92f0-8858563626e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/annotation/CheckExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/service/CategoryServiceAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/configuration/RedisConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/news/RedisNewsLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roman/service/InitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roman/service/event/StartListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/roman/dao/repository/CustomCategoryIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/roman/dao/repository/RedisNewsLoaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c5d063b-ae88-4c6e-9432-7c8724988e47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c5d063b-ae88-4c6e-9432-7c8724988e47.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c5d063b-ae88-4c6e-9432-7c8724988e47/storage_v2/_src_/database/news.04ozAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1c5d063b-ae88-4c6e-9432-7c8724988e47/storage_v2/_src_/database/news.04ozAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/annotation/CheckAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/annotation/CheckAuthor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/annotation/CheckSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/annotation/CheckSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/aop/AnnotationPointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/AnnotationPointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/aop/ClassPointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/ClassPointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/aop/CommentAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/aop/CommentAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/entity/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/comment/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/category/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/category/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/category/CustomCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/category/CustomCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/category/CustomCategoryRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/dao/repository/category/CustomCategoryRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roman/web/controller/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/roman/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roman/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/roman/dao/repository/BaseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roman/dao/repository/BaseRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/roman/service/CategoryServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roman/service/CategoryServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/roman/web/controller/CustomerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roman/web/controller/CustomerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,8 +163,10 @@
     "JUnit.repository in news-portal.executor": "Run",
     "JUnit.roman in news-portal.executor": "Run",
     "JUnit.service in news-portal.executor": "Run",
+    "Maven.news-portal [clean,package,-DskipTests].executor": "Run",
     "Maven.news-portal [clean].executor": "Run",
     "Maven.news-portal [compile].executor": "Run",
+    "Maven.news-portal [package].executor": "Run",
     "Maven.news-portal [test].executor": "Run",
     "Maven.news-portal [validate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -236,7 +209,7 @@
       <recent name="com.roman" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationRunner">
+  <component name="RunManager" selected="JUnit.CustomerControllerTest.unsuccessfulDeleteCustomer">
     <configuration name="CategoryServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="news-portal" />
       <extension name="coverage">
@@ -268,10 +241,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="repository in news-portal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest.successfulDeleteCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="news-portal" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/roman/dao/repository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roman.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roman.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.roman.web.controller.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="successfulDeleteCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest.unsuccessfulDeleteCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="news-portal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.roman.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.roman.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.roman.web.controller.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="unsuccessfulDeleteCustomer" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -280,14 +277,6 @@
       <module name="news-portal" />
       <option name="TEST_OBJECT" value="directory" />
       <dir value="$PROJECT_DIR$/src/test/java/com/roman" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="service in news-portal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="news-portal" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/roman/service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerControllerTest.unsuccessfulDeleteCustomer" />
+        <item itemvalue="JUnit.CustomerControllerTest.successfulDeleteCustomer" />
         <item itemvalue="JUnit.roman in news-portal" />
         <item itemvalue="JUnit.CategoryServiceIT" />
         <item itemvalue="JUnit.CategoryServiceIT.successfulUpdateCategory" />
-        <item itemvalue="JUnit.service in news-portal" />
-        <item itemvalue="JUnit.repository in news-portal" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +333,8 @@
       <workItem from="1724499985973" duration="11577000" />
       <workItem from="1724668661667" duration="8050000" />
       <workItem from="1724677350074" duration="6293000" />
-      <workItem from="1724758074556" duration="16912000" />
+      <workItem from="1724758074556" duration="17408000" />
+      <workItem from="1724868806105" duration="3390000" />
     </task>
     <servers />
   </component>

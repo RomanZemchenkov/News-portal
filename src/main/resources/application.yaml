@@ -2,9 +2,7 @@ spring:
   profiles:
     active:
   datasource:
-      url: jdbc:postgresql://localhost:5432/news
-      password: 1234
-      username: roman
+      url: jdbc:postgresql://${DATABASE_NAME}:5432/news
   jpa:
     properties:
       hibernate:
@@ -12,7 +10,7 @@ spring:
         format_sql: true
   data:
     redis:
-      news-live-time: 100
+      news-live-time: ${SPRING_DATA_REDIS_NEWS_LIVE_TIME:100}
       host: localhost
       port: 6379
       jedis:

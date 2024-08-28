@@ -62,10 +62,11 @@ public class CustomerController {
         return new ResponseEntity<>(update,HttpStatus.OK);
     }
 
-    @DeleteMapping("/{customerId}")
+    @DeleteMapping("")
     @CheckSession
-    public ResponseEntity<Response> delete(@PathVariable("customerId") Long customerId){
-        Long id = service.delete(customerId);
+    public ResponseEntity<Response> delete(HttpSession session){
+        String customerId = (String) session.getAttribute("customerId");
+        Long id = service.delete(Long.valueOf(customerId));
         Response response = new Response("Customer with id '%d' was deleted.".formatted(id));
         return new ResponseEntity<>(response,HttpStatus.OK);
     }
